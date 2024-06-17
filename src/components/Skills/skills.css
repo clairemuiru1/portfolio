@@ -1,4 +1,6 @@
 .skills {
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -7,11 +9,53 @@
     background: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     margin: 1rem 0;
-    border-radius: 5px;
+    border-radius: 15px;
     flex-basis: 30%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .skill-card h3 {
     text-align: center;
     margin: 0.5rem 0;
+    text-decoration: underline;
+    color: tomato; 
+}
+.skill-card li {
+    list-style: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    display: flex;
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    animation-delay: calc(var(--i) * 0.2s);
+    color: black ; 
+}
+.skill-card li:nth-child(1) { --i: 1; }
+.skill-card li:nth-child(2) { --i: 2; }
+.skill-card li:nth-child(3) { --i: 3; }
+.skill-card li:nth-child(4) { --i: 4; }
+.skill-card li:nth-child(5) { --i: 5; }
+.skill-card li:nth-child(6) { --i: 6; }
+.skill-card li:nth-child(7) { --i: 7; }
+.skill-card li:nth-child(8) { --i: 8; }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: #49557e;; /* Highlight color */
 }

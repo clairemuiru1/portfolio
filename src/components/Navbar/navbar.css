@@ -1,39 +1,60 @@
-.navbar{
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); /* Importing a signature-like font */
+
+.navbar {
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.navbar .h1{
-    width: 150px;
+.navbar h1 {
+    font-family: 'Great Vibes', cursive; /* Applying the signature font */
+    color: tomato; /* Setting color to tomato */
+    margin: 0;
+    font-size: 5rem;
 }
-.navbar-menu{
+.navbar-menu {
     display: flex;
-    list-style: none ;
+    list-style: none;
     gap: 20px;
-    color: #49557e;
+    margin: 0;
+    padding: 0;
+}
+.navbar-menu li {
     font-size: 18px;
     cursor: pointer;
 }
-.navbar-right{
+.navbar-menu li a {
+    color: #49557e; /* Setting the font color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.navbar-menu li a:hover {
+    color: tomato; /* Hover effect */
+}
+.navbar-right {
     display: flex;
     align-items: center;
     gap: 40px;
 }
-.navbar button{
+.navbar button {
     background: transparent;
     font-size: 16px;
     color: #49557e;
     border: 1px solid tomato;
-    padding: 10px 10px;
+    padding: 10px 20px; /* Adjusted padding for better appearance */
     border-radius: 50px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
-.navbar button:hover{
+.navbar button:hover {
     background: #fff4f2;
+    color: tomato; /* Change text color on hover */
 }
-.navbar .active{
+.navbar .active a {
+    color: tomato; /* Active tab color */
+    border-bottom: 2px solid tomato; /* Active tab border */
     padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
 }
