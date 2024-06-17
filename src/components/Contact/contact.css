@@ -1,0 +1,38 @@
+.contact {
+    padding: 2rem;
+    margin: auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact h2 {
+    text-align: center;
+    color: #e74c3c; /* Highlight color */
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.contact p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #49557e; /* Text color */
+    margin-bottom: 2rem;
+}
+.contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.contact ul li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #49557e; /* Text color */
+}
+.contact ul li a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.contact ul li a:hover {
+    color: tomato; /* Hover effect color */
+}

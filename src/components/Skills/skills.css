@@ -1,5 +1,4 @@
 .skills {
-    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -54,8 +53,10 @@
         transform: translateY(20px);
     }
 }
-h2 {
+h1 {
     text-align: center;
-    text-decoration: underline;
-    color: #49557e;; /* Highlight color */
+    color: black; /* Highlight color */
+}
+hr{
+    border: 1px solid rgb(17, 16, 16); 
 }

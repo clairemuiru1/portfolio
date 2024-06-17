@@ -3,7 +3,8 @@ import "./skills.css"
 function Skills() {
   return (
     <>
-      <h2>Skills</h2>
+      <h1>Skills</h1>
+      <hr></hr>
       <div class="skills">
         <div class="skill-card">
           <h3>Soft Skills</h3>
