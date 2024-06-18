@@ -11,6 +11,7 @@ function Contact() {
                     <li>Email: <a href="mailto:muiruclaire@gmail.com">muiruclaire@gmail.com</a></li>
                     <li>GitHub: <a href="https://github.com/clairemuiru1">https://github.com/clairemuiru1</a></li>
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/claire-muiru-147272304/">https://www.linkedin.com/in/claire-muiru-147272304/</a></li>
+                    <li>Phone no: 0725381105</li>
                 </ul>
             </section>
         </div>
