@@ -7,10 +7,10 @@ body {
   color: #070606;
 }
 .app{
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
-@tailwind base;
+  @tailwind base;
   @tailwind components;
   @tailwind utilities;
 

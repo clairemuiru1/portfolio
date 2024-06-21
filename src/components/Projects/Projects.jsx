@@ -27,8 +27,8 @@ function Portfolio() {
 
     return (
         <>
-        <h1>Projects</h1>
-        <hr></hr>
+        <h1 className='h1'>Explore My Projects</h1>
+        <h4 className="h3"> Innovative Solutions and Real-World Impact</h4>
             <div className="portfolio">
                 {projects.map((project, index) => (
                     <div className="portfolio-item" key={index}>

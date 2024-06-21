@@ -3,8 +3,8 @@ import "./skills.css"
 function Skills() {
   return (
     <>
-      <h1>Skills</h1>
-      <hr></hr>
+      <h1 className='h1'>Showcasing My Expertise:</h1>
+      <h4 className='h3'> From Crafting Clean Code to Delivering Creative Solutions</h4>
       <div class="skills">
         <div class="skill-card">
           <h3>Soft Skills</h3>
