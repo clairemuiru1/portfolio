@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
 
 .navbar {
-    padding: 10px 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: hsl(0, 0%, 90%);;
+    background-color: hsl(0, 0%, 90%);
     transition: top 0.3s ease-in-out;
 }
 
@@ -64,3 +64,37 @@
     color: tomato;
 }
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: hsl(0, 0%, 90%);
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+
+  .navbar h1 {
+    font-size: 2rem;
+  }
+
+  .navbar-toggle {
+    display: block;
+    color: tomato;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}

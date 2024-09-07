@@ -86,3 +86,39 @@ body {
       @apply bg-background text-foreground;
     }
   }
+
+  .app {
+    width: 75%;
+    margin: auto;
+  }
+  
+  /* Grid or Flexbox layout for sections */
+  .skills, .projects, .about, .service, .carousel-demo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust for sections */
+    gap: 20px;
+    margin-bottom: 50px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Tablet styles */
+    .app {
+      width: 90%;
+    }
+    
+    /* Stack sections for smaller screens */
+    .skills, .projects, .about, .service, .carousel-demo {
+      grid-template-columns: 1fr; /* Stack elements vertically */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Mobile styles */
+    .app {
+      width: 100%;
+    }
+    
+    .skills, .projects, .about, .service, .carousel-demo {
+      padding: 10px;
+    }
+  }
